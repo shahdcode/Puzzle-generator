@@ -192,12 +192,12 @@ ol {
 .site-btn:before {
 	left: 0;
 	top: 0;
-	background: #fff;
+	background: #081624;
 	z-index: -1;
 }
 
 .site-btn:hover {
-	color: #081624;
+	color:#fff;
 }
 
 /* Preloder */
@@ -274,7 +274,6 @@ ol {
 	left: 0;
 	top: 0;
 	z-index: 99;
-	padding: 15px 15px 0;
 }
 
 .header-warp {
