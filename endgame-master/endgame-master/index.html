@@ -1,223 +1,311 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>PuzzleVerse</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="EndGam Gaming Magazine Template">
-	<meta name="keywords" content="endGam,gGaming, magazine, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuzzleVerse</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EndGam Gaming Magazine Template">
+    <meta name="keywords" content="endGam,gGaming, magazine, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
 
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Custom Styles for Login and Register Modal -->
+    <style>
+        /* Modal Styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.8); /* Dark background w/ opacity */
+        }
 
+        .modal-content {
+            background-color: #2c003e; /* Dark purple background */
+            margin: 10% auto;
+            padding: 30px;
+            border: 1px solid #8e44ad; /* Border color for emphasis */
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            color: white;
+        }
 
+        .modal-header h2 {
+            font-size: 24px;
+            color: white;  /* Change text color to white */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-body {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #512c6b; /* Darker purple for input */
+            border: 1px solid #8e44ad;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #8e44ad; /* Purple button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #9b59b6; /* Lighter shade of purple on hover */
+        }
+
+        .close {
+            color: #fff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #8e44ad;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
 
-	<!-- Header section -->
-	<header class="header-section">
-		
-			<div class="header-bar-warp d-flex">
-				<nav class="top-nav-area w-100">
-					<div class="user-panel">
-						<a href="">Login</a> / <a href="">Register</a>
-					</div>
-					<!-- Menu -->
-					<ul class="main-menu primary-menu">
-						<li><a href="home.html">Home</a></li>
-						<li><a href="games.html">Game</a></li>
-						<li><a href="review.html">Reviews</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<!-- Header section end -->
-
-
-<!-- Hero section -->
-<section class="hero-section overflow-hidden">
-    <div class="hero-slider owl-carousel">
-        <!-- First Slide with Video Background -->
-        <div class="hero-item d-flex align-items-center justify-content-center text-center position-relative">
-            <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;">
-                <source src="img/landing video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="container position-relative z-1 text-white">
-                <h2>PuzzleVerse</h2>
-                <p>A universe of challenges awaits!</p>
-				<a href="#" class="site-btn">Play now<img src="img/icons/double-arrow.png" alt="#"/></a>
-            </div>
-        </div>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-</section>
 
-	
-	<!-- Hero section end-->
-
-
-<!-- Intro section -->
-<section class="intro-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="intro-text-box text-box text-white">
-                    <div class="top-meta">Recently  /  in <a href="">Puzzle Games</a></div>
-                    <h3>Challenge Your Mind with Our New Puzzle Game!</h3>
-                    <p>Sharpen your problem-solving skills with our latest brain-teasing adventure. Solve intricate puzzles, uncover hidden secrets, and push your logic to the limits!</p>
-                    <a href="#" class="read-more">Play Now <img src="img/icons/double-arrow.png" alt="#"/></a>
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="header-bar-warp d-flex">
+            <nav class="top-nav-area w-100">
+                <div class="user-panel">
+                    <!-- Trigger/Open The Modal for Login -->
+                    <a href="javascript:void(0);" id="myBtn" style="color: white;">Login</a> / 
+                    <!-- Trigger/Open The Modal for Register -->
+                    <a href="javascript:void(0);" id="registerBtn" style="color: white;">Register</a>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="intro-text-box text-box text-white">
-                    <div class="top-meta">Trending  /  in <a href="">Game Tips</a></div>
-                    <h3>Top Strategies to Solve Puzzles Faster</h3>
-                    <p>Struggling with a tricky level? Learn expert tips and techniques to crack even the toughest puzzles. Master the art of pattern recognition and logical deduction!</p>
-                    <a href="#" class="read-more">Learn More <img src="img/icons/double-arrow.png" alt="#"/></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="intro-text-box text-box text-white">
-                    <div class="top-meta">Exclusive  /  in <a href="">Special Offers</a></div>
-                    <h3>Unlock Exclusive Levels with Our Special Offer!</h3>
-                    <p>Enjoy new challenges and unlock premium puzzle packs at a discounted price. Test your skills with unique brain teasers designed for true puzzle enthusiasts!</p>
-                    <a href="#" class="read-more">Get Offer <img src="img/icons/double-arrow.png" alt="#"/></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Intro section end -->
-
-
-
-
-<!-- Blog section -->
-<!-- Tutorial Section -->
-<section class="blog-section spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-9 col-lg-8 col-md-7">
-                <div class="section-title text-white">
-                    <h2>How to Play</h2>
-                </div>
-                <ul class="blog-filter">
-                    <li><a href="#">Easy</a></li>
-                    <li><a href="#">Medium</a></li>
-                    <li><a href="#">Hard</a></li>
+                <!-- Menu -->
+                <ul class="main-menu primary-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="games.html">Game</a></li>
+                    <li><a href="review.html">Reviews</a></li>
                 </ul>
-                <!-- Step 1: Upload Image -->
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="img/tuto.jpg" alt="">
-                    </div>
-                    <div class="blog-text text-box text-white">
-                        <div class="top-meta"><span class="step-number">1.</span> Upload Your Image</div>
-                        <h3>Choose an Image to Start</h3>
-                        <p>To begin, select an image from your device. This will be used to personalize your gameplay experience.</p>
-                        <p><strong>How to upload:</strong></p>
-                        <ul>
-                            <li><strong>1.1</strong> Click the upload button.</li>
-                            <li><strong>1.2</strong> Select an image from your device.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Step 2: How to Play -->
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="img/tuto.jpg" alt="">
-                    </div>
-                    <div class="blog-text text-box text-white">
-                        <div class="top-meta"><span class="step-number">2.</span> Learn the Rules</div>
-                        <h3>Understand How to Play</h3>
-                        <p>Before you start, here’s a quick overview of the game mechanics.</p>
-                        <p><strong>How to Play:</strong></p>
-                        <ul>
-                            <li><strong>2.1</strong> Use the arrow keys or on-screen controls to navigate.</li>
-                            <li><strong>2.2</strong> Complete objectives based on the game mode.</li>
-                            <li><strong>2.3</strong> Keep an eye on your score and time.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Step 3: Select Difficulty -->
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="img/tuto.jpg" alt="">
-                    </div>
-                    <div class="blog-text text-box text-white">
-                        <div class="top-meta"><span class="step-number">3.</span> Choose a Difficulty</div>
-                        <h3>Pick Your Challenge Level</h3>
-                        <p>To customize your experience, select a difficulty level before starting.</p>
-                        <p><strong>Difficulty Levels:</strong></p>
-                        <ul>
-                            <li><strong>3.1</strong> <strong>Easy:</strong> Great for beginners.</li>
-                            <li><strong>3.2</strong> <strong>Medium:</strong> A balanced challenge.</li>
-                            <li><strong>3.3</strong> <strong>Hard:</strong> For experienced players.</li>
-                        </ul>
-                    </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Hero section -->
+    <section class="hero-section overflow-hidden">
+        <div class="hero-slider owl-carousel">
+            <!-- First Slide with Video Background -->
+            <div class="hero-item d-flex align-items-center justify-content-center text-center position-relative">
+                <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;">
+                    <source src="img/landing video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="container position-relative z-1 text-white">
+                    <h2>PuzzleVerse</h2>
+                    <p>A universe of challenges awaits!</p>
+                    <a href="#" class="site-btn">Play now<img src="img/icons/double-arrow.png" alt="#"/></a>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Hero section end-->
+
+    <!-- Modal (Login Form) -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Login to PuzzleVerse</h2>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <!-- Email Input -->
+                    <input type="email" class="login-input" placeholder="Enter your email" id="email" name="email" required>
+
+                    <!-- Password Input -->
+                    <input type="password" class="login-input" placeholder="Enter your password" id="password" name="password" required>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
     </div>
-</section>
 
-	<!-- Newsletter section -->
-	<section class="newsletter-section">
-		<div class="container">
-			<h2>Subscribe to our newsletter</h2>
-			<form class="newsletter-form">
-				<input type="text" placeholder="ENTER YOUR E-MAIL">
-				<button class="site-btn">subscribe  <img src="img/icons/double-arrow.png" alt="#"/></button>
-			</form>
-		</div>
-	</section>
-	<!-- Newsletter section end -->
+    <!-- Modal (Register Form) -->
+    <div id="registerModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Register to PuzzleVerse</h2>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <!-- Name Input -->
+                    <input type="text" class="login-input" placeholder="Enter your name" id="name" name="name" required>
 
+                    <!-- Email Input -->
+                    <input type="email" class="login-input" placeholder="Enter your email" id="registerEmail" name="email" required>
 
-	<!-- Footer section -->
-	<footer class="footer-section">
-		<div class="container">
-			<ul class="main-menu footer-menu">
-				<li><a href="">Home</a></li>
-				<li><a href="">Game</a></li>
-				<li><a href="">Reviews</a></li>
-			</ul>
-			<div class="footer-social d-flex justify-content-center">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-			</div>
-			<div class="copyright"><a href="">PuzzleVerse</a> 2025 @ All rights reserved</div>
-		</div>
-	</footer>
-	<!-- Footer section end -->
+                    <!-- Password Input -->
+                    <input type="password" class="login-input" placeholder="Enter your password" id="registerPassword" name="password" required>
 
+                    <!-- Register Button -->
+                    <button type="submit" class="login-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.sticky-sidebar.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="container">
+            <ul class="main-menu footer-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+            <div class="footer-social d-flex justify-content-center">
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="copyright"><a href="">PuzzleVerse</a> 2025 @ All rights reserved</div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
 
-	</body>
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- JavaScript for Modal and Form Validation -->
+    <script>
+        // Get the modal for Login
+        var modal = document.getElementById("myModal");
+
+        // Get the modal for Register
+        var registerModal = document.getElementById("registerModal");
+
+        // Get the button that opens the modal for Login
+        var btn = document.getElementById("myBtn");
+
+        // Get the button that opens the modal for Register
+        var registerBtn = document.getElementById("registerBtn");
+
+        // Get the <span> element that closes the modal for Login
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the <span> element that closes the modal for Register
+        var registerSpan = document.getElementsByClassName("close")[1];
+
+        // When the user clicks the button for Login, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks the button for Register, open the modal
+        registerBtn.onclick = function() {
+            registerModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x) for Login, close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks on <span> (x) for Register, close the modal
+        registerSpan.onclick = function() {
+            registerModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal for Login, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == registerModal) {
+                registerModal.style.display = "none";
+            }
+        }
+
+        // Form Validation for Login
+        const loginForm = document.getElementById('loginForm');
+        const emailField = document.getElementById('email');
+        const passwordField = document.getElementById('password');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (emailField.value.trim() === '' || passwordField.value.trim() === '') {
+                alert("Please fill in both fields.");
+            } else {
+                alert('Login successful!');
+                modal.style.display = "none"; // Close modal on successful login
+            }
+        });
+
+        // Form Validation for Register
+        const registerForm = document.getElementById('registerForm');
+        const registerEmailField = document.getElementById('registerEmail');
+        const registerPasswordField = document.getElementById('registerPassword');
+
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (registerEmailField.value.trim() === '' || registerPasswordField.value.trim() === '') {
+                alert("Please fill in both fields.");
+            } else {
+                alert('Registration successful!');
+                registerModal.style.display = "none"; // Close modal on successful registration
+            }
+        });
+    </script>
+</body>
 </html>
